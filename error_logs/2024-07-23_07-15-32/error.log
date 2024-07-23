@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus\browser_decorator.py", line 163, in run_task
+    result = func(driver, data)
+             ^^^^^^^^^^^^^^^^^^
+TypeError: VisaBotApp.start_bot.<locals>.check_visa_appointments() takes 1 positional argument but 2 were given

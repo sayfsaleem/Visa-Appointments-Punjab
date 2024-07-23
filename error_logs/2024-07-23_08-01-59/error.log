@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus\browser_decorator.py", line 163, in run_task
+    result = func(driver, data)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ic\Documents\Visa-Appointments-Punjab\main.py", line 102, in check_visa_appointments
+    driver.type("input[name='9d138b4432e520368d8744518a8fc3205f112d1476e98f52f713752c091fe76ae2909f36867a8ff3c08bce7b9090578b6d5b5ae01bbd4ba330cd1ffee7f64767BqfYE5/Lc2kpnmGLK7iSUgqPVjpD+ngmQfDDx4FjqZo=']", credential['Email'])
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus_driver\driver.py", line 608, in type
+    elem = self.wait_for_element(selector, wait)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus_driver\driver.py", line 732, in wait_for_element
+    return make_element(self, self._tab, self._run(self._tab.wait_for(selector, timeout=wait)))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus_driver\driver.py", line 433, in _run
+    return self._loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus_driver\core\tab.py", line 875, in wait_for
+    raise ElementWithSelectorNotFoundException(selector)
+botasaurus_driver.exceptions.ElementWithSelectorNotFoundException: Cannot find element with selector: 'input[name='9d138b4432e520368d8744518a8fc3205f112d1476e98f52f713752c091fe76ae2909f36867a8ff3c08bce7b9090578b6d5b5ae01bbd4ba330cd1ffee7f64767BqfYE5/Lc2kpnmGLK7iSUgqPVjpD+ngmQfDDx4FjqZo=']'.

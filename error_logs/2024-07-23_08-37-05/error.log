@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\PIL\Image.py", line 3222, in open
+    fp.seek(0)
+    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ic\AppData\Roaming\Python\Python312\site-packages\botasaurus\browser_decorator.py", line 163, in run_task
+    result = func(driver, data)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ic\Documents\Visa-Appointments-Punjab\main.py", line 108, in check_visa_appointments
+    captcha_image = Image.open(captcha_image_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\PIL\Image.py", line 3224, in open
+    fp = io.BytesIO(fp.read())
+                    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
